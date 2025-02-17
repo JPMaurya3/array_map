@@ -8,6 +8,8 @@ void main() {
   Map<dynamic, dynamic> employeeMap = {
     // for loop inside map letral
     for (var employee in detailsEmp) employee.id: employee.name
+    // here we add key and value 
+   // employeeMap[employee.id]=employee.value;
   };
   print(employeeMap);
 }
