@@ -7,6 +7,7 @@ void main() {
   for (var element in strList) {
     String firstLetter = element[0];
     // Initialize the list if the key doesn't exist
+    // null check operator ensure that keyValueMap[firstLetter] can be null if key is not exist in the keyValueMap 
     if (!keyValueMap.containsKey(firstLetter)) {
       keyValueMap[firstLetter] = [];
     }
